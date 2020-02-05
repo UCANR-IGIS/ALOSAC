@@ -1,0 +1,124 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The CSS Grid</title>
+        <meta name="description" content="The HTML5 Herald">
+        <meta name="author" content="SitePoint">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://js.arcgis.com/4.14/esri/css/main.css">
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+
+    <body>
+        <!--<div class="wrapper">
+<header class="header">
+<div class="header-grid">
+<div>
+<p class="title">Test Framework</p>
+<p class="subTitle">This...<a style="vertical-align: text-bottom; font-size: 75%;" href="http://ucanr.edu/sites/OAR/AgriTourism/"> More Information</a></p>
+</div>
+<div>
+<img height="50px" style="float: right;" alt="" src="image/ucce.png" />
+</div>
+</div>
+</header>
+<sidebar class="sidebar"></sidebar>
+<main class="main">
+<div class="box" id="viewDiv"></div>
+<div class="box" id="viewDiv2"></div>
+</main>
+<footer class="footer">
+<div class="header-grid">
+<div>
+<a class="dark-grey-text " href="http://ucanr.edu/Copyright/ ">© 2018 Regents of the University of California</a>
+</div>
+<div class="col-6 " style="padding-right: 0px; ">
+<a class="dark-grey-text " style="float: right; " href="ucanr.edu/sites/OAR/">ucanr.edu/sites/OAR/</a>
+</div>
+</div>
+</footer>
+</div>-->
+
+
+        <div class="wrapper">
+            <div class="box header">Header</div>
+            <div class="box content" id="viewDiv"></div>
+            <div class="box content2" id="viewDiv2"></div>
+            <div class="box sidebar">
+                <div class="w3-bar w3-black">
+                    <button class="w3-bar-item w3-button" onclick="openTab('sliderDiv')">Sliders</button>
+                    <button class="w3-bar-item w3-button" onclick="openTab('parcelDiv')">Parcels</button>
+                </div>
+                <div id="sliderDiv" class="tab">
+                    <h2>Sliders</h2>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        <p>Value: <span id="demo"></span></p>
+                    </div>
+                </div>
+
+                <div id="parcelDiv" class="tab" style="display:none">
+                    <h2>Parcel List</h2>
+                </div>
+
+            </div>
+            <div class="box footer">Footer</div>
+        </div>
+
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://js.arcgis.com/4.14/"></script>
+        <script>
+            require([
+                "esri/Map",
+                "esri/views/MapView",
+                "esri/WebMap",
+                "esri/tasks/QueryTask",
+                "esri/tasks/support/Query",
+                "dojo/domReady!"
+            ], function(Map, MapView, WebMap, QueryTask, Query) {
+                var webmap = new WebMap({
+                    portalItem: {
+                        id: "2f991d990ec64c2caa749ec1dcf318cf"
+                    }
+                });
+                
+                var view = new MapView({
+                    container: "viewDiv",
+                    map: webmap 
+                });
+
+                var view2 = new MapView({
+                    container: "viewDiv2", // Reference to the scene div created in step 5
+                    map: webmap 
+                });
+
+
+            });
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+            } 
+            function openTab(tabName) {
+                var i;
+                var x = document.getElementsByClassName("tab");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                document.getElementById(tabName).style.display = "block";  
+            }
+
+        </script>
+    </body>
+
+</html>
