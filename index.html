@@ -39,7 +39,7 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exportModalLabel">Export Data/Report</h5>
+                                <p class="modal-title" id="exportModalLabel">Export Data/Report</p>
                             </div>
                             <div id="exportBody" class="modal-body">
                             </div>
@@ -54,7 +54,7 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="loadModalLabel"></h5>
+                                <p class="modal-title" id="loadModalLabel"></p>
                             </div>
                             <div id="loadBody" class="modal-body">
                                 Loading Data...
@@ -72,7 +72,7 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="saveModalLabel">Save Scenario</h5>
+                                <p class="modal-title" id="saveModalLabel">Save Scenario</p>
                             </div>
                             <div class="modal-body">
                                 <label for="scenarioName">Scenario Name:</label>
@@ -89,7 +89,7 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="deleteModalLabel">Delete Scenario</h5>
+                                <p class="modal-title" id="deleteModalLabel">Delete Scenario</p>
                             </div>
                             <div class="modal-body">
                                 Confirm Delete
@@ -111,7 +111,7 @@
                         <div class="sidebar-item sidebar-header d-flex flex-nowrap">
 
                             <ul>
-                                <h6>Study Area</h6>
+                                <p class="sbMenuItem">Study Area</p>
                                 <li>
                                     <input type="radio" id="sa1" name="sa" value="SA_80_20 IS NOT NULL">
                                     <label for="sa1">20</label>
@@ -124,7 +124,7 @@
                                     <input type="radio" id="sa3" name="sa" value="" checked>
                                     <label for="sa3">All</label>
                                 </li>
-                                <h6>Areas Of Interest</h6>
+                                <p class="sbMenuItem">Areas Of Interest</p>
                                 <li>
                                     <input type="checkbox" id="fm1" name="fm" value="APN = '99A-2130-1-2' OR APN = '99A-2150-1-2' OR APN = '99A-2150-2-1' OR APN = '99A-2150-2-2' OR APN = '99A-2160-1-3' OR APN = '99A-2160-1-4' OR APN = '99A-2170-1-5' OR APN = '99A-2170-2-9' OR APN = '99A-2170-2-10' OR APN = '99A-2170-2-11' OR APN = '99A-2200-1-36' OR APN = '99A-2200-4' OR APN = '99A-2200-5' OR APN = '99A-2220-1-19' OR APN = '99A-2220-2' OR APN = '99A-2540-3'">
                                     <label for="fm1">Carnegie Park</label>
@@ -137,7 +137,7 @@
                                     <input type="checkbox" id="fm3" name="fm" value="APN = '99A-2610-27' OR APN = '99A-2610-28' OR APN = '99A-2610-36' OR APN = '99A-2610-37' OR APN = '99A-2610-40' OR APN = '99A-2610-44' OR APN = '99A-2610-45' OR APN = '99A-2680-2' OR APN = '99A-2680-3' OR APN = '99A-2680-10' OR APN = '99A-2680-11' OR APN = '99A-2680-18' OR APN = '99A-2680-20' OR APN = '99A-2720-10' OR APN = '99A-2720-11' OR APN = '99A-2720-12' OR APN = '99A-2720-13' OR APN = '99A-2720-15' OR APN = '99A-2720-17' OR APN = '99A-2720-18' OR APN = '99A-2730-9' OR APN = '99A-2800-2' OR APN = '99A-2800-3' OR APN = '99A-2800-4' OR APN = '99A-2800-5-1' OR APN = '99A-2800-6' OR APN = '99A-2800-7' OR APN = '99A-2800-8-1' OR APN = '99A-2800-9-1' OR APN = '99A-2800-11' OR APN = '99A-2800-13' OR APN = '99A-2810-1' OR APN = '99A-2810-3' OR APN = '99A-2810-4' OR APN = '99A-2810-5' OR APN = '99A-2810-6' OR APN = '99A-2810-7' OR APN = '99A-2810-8' OR APN = '99A-2810-9' OR APN = '99A-2810-12' OR APN = '99A-2810-13' OR APN = '99A-2810-14' OR APN = '99A-2810-15' OR APN = '99A-2810-16' OR APN = '99A-2810-18' OR APN = '99A-2850-5' OR APN = '99A-2850-6' OR APN = '99A-2850-8' OR APN = '99A-2850-9' OR APN = '99A-2850-10' OR APN = '99A-2850-11'">
                                     <label for="fm3">N3 Ranch</label>
                                 </li>
-                                <h6>Parcel Acreage Filter</h6>
+                                <p class="sbMenuItem">Parcel Acreage Filter</p>
                                 <li>
                                     <span>
                                         <label class="acreLabel" for="minSize">Min:</label>
@@ -186,35 +186,35 @@
                                     <div class="sidebar-submenu">
                                         <ul>
                                             <li>
-                                                <p class="sliderLabel">Overall (Category Multiplier)</p>
+                                                <label for="HB" class="sliderLabel">Overall (Category Multiplier)</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="HB"><span class="sliderLabel" id="HBVal"></span>
                                             </li>
                                             <li>
-                                                <p class="sliderLabel">Bird Areas</p>
+                                                <label for="BA" class="sliderLabel">Bird Areas</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="BA"><span class="sliderLabel" id="BAVal"></span>
                                             </li>
                                             <li>
-                                                <p class="sliderLabel">Wetland</p>
+                                                <label for="WL" class="sliderLabel">Wetland</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="WL"><span class="sliderLabel" id="WLVal"></span>
                                             </li>
                                             <li>
-                                                <p class="sliderLabel">Whipsnake</p>
+                                                <label for="WS" class="sliderLabel">Whipsnake</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="WS"><span class="sliderLabel" id="WSVal"></span>
                                             </li>
                                             <li>
-                                                <p class="sliderLabel">Red Legged Frog</p>
+                                                <label for="RF" class="sliderLabel">Red Legged Frog</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="RF"><span class="sliderLabel" id="RFVal"></span>
                                             </li>
                                             <li>
-                                                <p class="sliderLabel">Tiger Salamander</p>
+                                                <label for="TS" class="sliderLabel">Tiger Salamander</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="TS"><span class="sliderLabel" id="TSVal"></span>
                                             </li>
                                             <li>
-                                                <p class="sliderLabel">Delta Smelt</p>
+                                                <label for="DS" class="sliderLabel">Delta Smelt</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="DS"><span class="sliderLabel" id="DSVal"></span>
                                             </li>
                                             <li>
-                                                <p class="sliderLabel">Fairy Shrimp</p>
+                                                <label for="FS" class="sliderLabel">Fairy Shrimp</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="FS"><span class="sliderLabel" id="FSVal"></span>
                                             </li>
                                         </ul>
@@ -228,23 +228,23 @@
                                     <div class="sidebar-submenu">
                                         <ul>
                                             <li>
-                                                <p class="sliderLabel">Overall (Category Multiplier)</p>
+                                                <label for="CN" class="sliderLabel">Overall (Category Multiplier)</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="CN"><span class="sliderLabel" id="CNVal"></span>
                                             </li>
                                             <li>
-                                                <p class="sliderLabel">Critical Link</p>
+                                                <label for="CL" class="sliderLabel">Critical Link</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="CL"><span class="sliderLabel" id="CLVal"></span>
                                             </li>
                                             <li>
-                                                <p class="sliderLabel">Intensified Connectivity</p>
+                                                <label for="IC" class="sliderLabel">Intensified Connectivity</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="IC"><span class="sliderLabel" id="ICVal"></span>
                                             </li>
                                             <li>
-                                                <p class="sliderLabel">Diffuse Connectivity</p>
+                                                <label for="DC" class="sliderLabel">Diffuse Connectivity</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="DC"><span class="sliderLabel" id="DCVal"></span>
                                             </li>
                                             <li>
-                                                <p class="sliderLabel">Channelized Connectivity</p>
+                                                <label for="CC" class="sliderLabel">Channelized Connectivity</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="CC"><span class="sliderLabel" id="CCVal"></span>
                                             </li>
                                         </ul>
@@ -258,11 +258,11 @@
                                     <div class="sidebar-submenu">
                                         <ul>
                                             <li>
-                                                <p class="sliderLabel">Overall (Category Multiplier)</p>
+                                                <label for="RN" class="sliderLabel">Overall (Category Multiplier)</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="RN"><span class="sliderLabel" id="RNVal"></span>
                                             </li>
                                             <li>
-                                                <p class="sliderLabel">Recreation</p>
+                                                <label for="PL" class="sliderLabel">Recreation</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="PL"><span class="sliderLabel" id="PLVal"></span>
                                             </li>
                                         </ul>
@@ -276,19 +276,19 @@
                                     <div class="sidebar-submenu">
                                         <ul>
                                             <li>
-                                                <p class="sliderLabel">Overall (Category Multiplier)</p>
+                                                <label for="HB" class="sliderLabel">Overall (Category Multiplier)</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="SV"><span class="sliderLabel" id="SVVal"></span>
                                             </li>
                                             <li>
-                                                <p class="sliderLabel">View from Roads</p>
+                                                <label for="VS" class="sliderLabel">View from Roads</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="VS"><span class="sliderLabel" id="VSVal"></span>
                                             </li>
                                             <li>
-                                                <p class="sliderLabel">High Visibility</p>
+                                                <label for="VB" class="sliderLabel">High Visibility</label>
                                                 <input type="range" min="0" max="5" value="1" class="slider" id="VB"><span class="sliderLabel" id="VBVal"></span>
                                             </li>
                                             <li>
-                                                <p class="sliderLabel">Low Visibility</p>
+                                                <label for="VL" class="sliderLabel">Low Visibility</label>
                                                 <input type="range" min="0" max="5" value="0" class="slider" id="VL"><span class="sliderLabel" id="VLVal"></span>
                                             </li>
                                         </ul>
